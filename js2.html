@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULOS</title>
+    <style>
+        body {
+            font-family:'Times New Roman', Times, serif;
+            font-size: 20pt;
+            color:black;
+            background: white;
+        }
+        div {
+            color: rgb(255, 0, 0);
+        } img {
+            width: 500px;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calcular</h1>
+
+    <h3>Média</h3>
+    <h5>1° Valor : <input type="number" id="m1"></h5>
+    <h5>2° Valor : <input type="number" id="m2"></h5>
+    <h5>3° Valor : <input type="number" id="m3"></h5>
+    <h5>4° Valor : <input type="number" id="m4"></h5>
+    <input type="button" id="m5" value="resultado">
+    <div id="m6"></div>
+    <br>
+    <br>
+    <hr>
+    <h5>Digite 1°Valor : <input type="number" id="r1"></h5>
+    <h5>Digite 2°Valor : <input type="number" id="r2"></h5>
+    <h5>Digite 3°Valor : <input type="number" id="r3"></h5>
+    <input type="button" value="resultado" id="r4">
+    <div id="r5"></div>
+   <img id="r6"> 
+    <br>
+    <br>
+    <hr>
+    <h5>Digite o primeiro número para tabuada : <input type="number" id="s1"></h5>
+    <h5>Digite o segundo número para tabuada  : <input type="number" id="s2"></h5>
+    <input type="button" value="resultado" id="s3">
+    <div id="s4"></div>
+    <script>
+        var mx1 = document.getElementById('m1');
+        var mx2 = document.getElementById('m2');
+        var mx3 = document.getElementById('m3');
+        var mx4 = document.getElementById('m4');
+        var mx5 = document.getElementById('m5');
+        var mx6 = document.getElementById('m6');
+        var rx1 = document.getElementById('r1');
+        var rx2 = document.getElementById('r2');
+        var rx3 = document.getElementById('r3');
+        var rx4 = document.getElementById('r4');
+        var rx5 = document.getElementById('r5');
+        var rx6 = document.getElementById('r6');
+        var sx1 = document.getElementById('s1');
+        var sx2 = document.getElementById('s2');
+        var sx3 = document.getElementById('s3');
+        var sx4 = document.getElementById('s4');
+        mx5.addEventListener('click', () => {
+            var mxn1 = Number(mx1.value);
+            var mxn2 = Number(mx2.value);   
+            var mxn3 = Number(mx3.value);
+            var mxn4 = Number(mx4.value);
+            mx6.innerHTML = `A média é : ${(mxn1+mxn2+mxn3+mxn4)/4}`;
+        })
+       
+    
+    </script>
+</body>
+</html>
